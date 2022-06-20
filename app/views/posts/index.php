@@ -2,7 +2,7 @@
     <?php foreach($posts as $post): ?>
     <div class="col-md-6 d-flex ftco-animate">
         <div class="blog-entry justify-content-end">
-            <a href="article.html" class="block-20" style="background-image: url('assets/images/<?php echo $post['image']; ?>');">
+            <a href="?postId=<?php echo $post['id']; ?>" class="block-20" style="background-image: url('assets/images/<?php echo $post['image']; ?>');">
             </a>
             <div class="text p-4 float-right d-block">
                 <div class="topper d-flex align-items-center">
