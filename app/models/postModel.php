@@ -1,6 +1,8 @@
 <?php
 namespace App\Models\PostModel;
 use \PDO;
+
+//liste des 10 derniers posts
 function findAll(PDO $connexion){
     $sql = "SELECT *
             FROM posts
@@ -11,6 +13,7 @@ function findAll(PDO $connexion){
     return $rs->fetchAll(PDO::FETCH_ASSOC);
 }
 
+// détail d'un post par son id
 function findOneById(PDO $connexion, int $id)
 {
     $sql = "SELECT *
